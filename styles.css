@@ -97,9 +97,9 @@ body[data-section="home"] #home,body[data-section="publications"] #publications,
 
 /* Persistent profile rail: only the right-hand page changes. */
 .water-stage,.home-banner,.page-section>.page-banner { display:none; }
-.profile-panel { position:fixed; inset:0 auto 0 0; z-index:30; width:360px; overflow:auto; color:#fff; background:linear-gradient(rgba(9,30,43,.52),rgba(9,30,43,.9)),url("materials/water.jpg") center/cover no-repeat; box-shadow:10px 0 34px rgba(16,35,48,.13); }
+.profile-panel { position:fixed; inset:0 auto 0 0; z-index:30; width:360px; overflow:auto; color:#fff; background:#02070b url("materials/water.jpg") center/cover no-repeat; box-shadow:10px 0 34px rgba(16,35,48,.13); }
 .profile-panel-inner { display:flex; min-height:100%; flex-direction:column; align-items:center; padding:70px 40px 38px; text-align:center; }
-.profile-panel .profile-photo { width:172px; height:172px; margin:0 auto 22px; }
+.profile-panel .profile-photo { width:172px; height:172px; margin:0 auto 22px; border:0; box-shadow:none; }
 .profile-panel h1 { margin:0; font-family:Georgia,"Times New Roman",serif; font-size:3.35rem; font-weight:500; line-height:1; }
 .profile-panel .tagline { max-width:270px; margin:18px auto 28px; font-size:.98rem; line-height:1.55; }
 .profile-links { display:flex; width:100%; flex-direction:column; gap:7px; margin-top:4px; padding-top:22px; border-top:1px solid rgba(255,255,255,.24); text-align:left; }
