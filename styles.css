@@ -15,8 +15,10 @@ a { color:inherit; text-underline-offset:.2em; }
 .site-nav a::after { position:absolute; right:0; bottom:-8px; left:0; height:2px; background:#e2c38c; content:""; transform:scaleX(0); transition:transform .2s ease; }
 .site-nav a:hover,.site-nav a.is-active { color:#fff; }
 .site-nav a.is-active::after { transform:scaleX(1); }
-.language-toggle { display:inline-flex; gap:2px; padding:3px; border:1px solid rgba(255,255,255,.3); border-radius:999px; color:#fff; background:rgba(255,255,255,.08); font:inherit; font-size:.76rem; font-weight:700; cursor:pointer; }
-.language-toggle span { padding:2px 7px; }
+.language-toggle { display:inline-flex; align-items:center; gap:2px; padding:3px; border:1px solid rgba(255,255,255,.3); border-radius:999px; color:#fff; background:rgba(255,255,255,.08); font:inherit; font-size:.76rem; font-weight:700; cursor:pointer; }
+.language-icon { width:17px; height:17px; margin:0 4px 0 5px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.language-option { padding:3px 8px; border-radius:999px; line-height:1.2; }
+body[data-lang="en"] .language-option-en,body[data-lang="zh"] .language-option-zh { color:#fff; background:var(--navy); }
 .nav-toggle { display:none; border:0; background:transparent; }
 .nav-toggle span { display:block; width:22px; height:2px; margin:5px; background:#fff; }
 main { height:100%; }
