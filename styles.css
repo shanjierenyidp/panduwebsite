@@ -45,7 +45,8 @@ body[data-section="home"] #home,body[data-section="publications"] #publications,
 .focus-diagram,.research-content,.contact-content { display:none; }
 .education-heading { padding-top:34px; border-top:1px solid var(--line); }
 .education-list { display:grid; border-top:1px solid var(--line); }
-.education-list div { display:grid; grid-template-columns:minmax(230px,.9fr) 1.1fr; gap:24px; padding:20px 0; border-bottom:1px solid var(--line); }
+.education-list div { display:grid; grid-template-columns:58px minmax(230px,.9fr) 1.1fr; align-items:center; gap:24px; padding:20px 0; border-bottom:1px solid var(--line); }
+.education-list img { width:52px; height:52px; object-fit:contain; }
 .education-list span { color:var(--muted); }
 .publications-content article { padding-bottom:20px; border-bottom:1px solid var(--line); }
 .publications-content ol { padding-left:1.45rem; }
@@ -81,7 +82,9 @@ body[data-section="home"] #home,body[data-section="publications"] #publications,
   .home-banner { min-height:0; padding-top:68px; background-size:100% 205px; }
   .profile-photo { width:165px; height:165px; }
   .social-links { max-width:500px; margin:auto; }
-  .education-list div,.contact-card p { grid-template-columns:1fr; gap:4px; }
+  .education-list div { grid-template-columns:48px 1fr; gap:4px 14px; }
+  .education-list img { grid-row:1/3; width:44px; height:44px; }
+  .contact-card p { grid-template-columns:1fr; gap:4px; }
   .teaching-content { grid-template-columns:1fr; gap:30px; }
   .teaching-quote { grid-column:auto; padding:28px; }
   .cv-frame { min-height:500px; }
