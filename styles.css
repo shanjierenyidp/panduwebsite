@@ -124,6 +124,11 @@ body[data-section="home"] #home,body[data-section="publications"] #publications,
 .site-nav a:hover,.site-nav a.is-active { color:var(--navy); }
 .site-nav a::after { background:var(--accent); }
 .language-toggle { margin-left:auto; border-color:var(--line); color:var(--navy); background:var(--cream); }
+@media (min-width:1051px) {
+  .site-header { display:grid; grid-template-columns:1fr auto 1fr; }
+  .site-nav { grid-row:1; grid-column:2; display:grid; grid-template-columns:76px 108px 60px 36px 72px; gap:clamp(12px,1.6vw,24px); margin:0; text-align:center; }
+  .language-toggle { grid-row:1; grid-column:3; justify-self:end; width:146px; margin:0; justify-content:center; }
+}
 main { margin-left:360px; }
 .page-section { top:66px; right:0; bottom:0; left:360px; padding-top:0; }
 .content-section { width:min(920px,calc(100% - 72px)); padding:72px 0 86px; }
