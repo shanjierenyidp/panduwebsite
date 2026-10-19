@@ -48,7 +48,7 @@ body[data-section="home"] #home,body[data-section="publications"] #publications,
 .appointments-heading,.education-heading { padding-top:34px; border-top:1px solid var(--line); }
 .appointment-list,.education-list { display:grid; border-top:1px solid var(--line); }
 .appointment-list div,.education-list div { display:grid; grid-template-columns:minmax(260px,.9fr) 1.1fr; align-items:center; gap:36px; padding:20px 0; border-bottom:1px solid var(--line); }
-.appointment-list span,.education-list span { display:flex; align-items:center; gap:14px; color:var(--muted); }
+.appointment-list div>span,.education-list div>span { display:flex; align-items:center; gap:14px; color:var(--muted); }
 .appointment-list img,.education-list img { flex:0 0 auto; width:52px; height:52px; object-fit:contain; }
 .publications-content article { padding-bottom:20px; border-bottom:1px solid var(--line); }
 .publications-content ol { padding-left:1.45rem; }
