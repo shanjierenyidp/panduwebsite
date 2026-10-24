@@ -15,9 +15,9 @@ a { color:inherit; text-underline-offset:.2em; }
 .site-nav a::after { position:absolute; right:0; bottom:-8px; left:0; height:2px; background:#e2c38c; content:""; transform:scaleX(0); transition:transform .2s ease; }
 .site-nav a:hover,.site-nav a.is-active { color:#fff; }
 .site-nav a.is-active::after { transform:scaleX(1); }
-.language-toggle { display:inline-flex; align-items:center; gap:2px; padding:3px; border:1px solid rgba(255,255,255,.3); border-radius:999px; color:#fff; background:rgba(255,255,255,.08); font:inherit; font-size:.76rem; font-weight:700; cursor:pointer; }
-.language-icon { width:17px; height:17px; margin:0 4px 0 5px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
-.language-option { padding:3px 8px; border-radius:999px; line-height:1.2; }
+.language-toggle { display:inline-flex; height:44px; align-items:center; gap:2px; padding:3px 4px; border:1px solid rgba(255,255,255,.3); border-radius:999px; color:#fff; background:rgba(255,255,255,.08); font:inherit; font-size:.76rem; font-weight:700; cursor:pointer; }
+.language-icon { width:17px; height:17px; margin:0 2px 0 3px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.language-option { padding:6px 7px; border-radius:999px; line-height:1.2; }
 body[data-lang="en"] .language-option-en,body[data-lang="zh"] .language-option-zh { color:#fff; background:var(--navy); }
 .nav-toggle { display:none; border:0; background:transparent; }
 .nav-toggle span { display:block; width:22px; height:2px; margin:5px; background:#fff; }
@@ -127,7 +127,7 @@ body[data-section="home"] #home,body[data-section="publications"] #publications,
 @media (min-width:1051px) {
   .site-header { display:grid; grid-template-columns:1fr auto 1fr; }
   .site-nav { grid-row:1; grid-column:2; display:grid; grid-template-columns:76px 108px 60px 36px 72px; gap:clamp(12px,1.6vw,24px); margin:0; text-align:center; }
-  .language-toggle { grid-row:1; grid-column:3; justify-self:end; width:146px; margin:0; justify-content:center; }
+  .language-toggle { grid-row:1; grid-column:3; justify-self:end; width:auto; margin:0; justify-content:center; }
 }
 main { margin-left:360px; }
 .page-section { top:66px; right:0; bottom:0; left:360px; padding-top:0; }
